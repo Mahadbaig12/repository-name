@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Faq;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+
 
 class HomeController extends Controller
 {
@@ -87,10 +88,12 @@ class HomeController extends Controller
 
             $main2_contant = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod officia saepe expedita laborum cumque, quia nam. Explicabo porro eos odio nemo provident tempore nesciunt, magnam sapiente expedita quibusdam magni, eligendi hic doloribus ipsam nobis animi exercitationem quas. Est, neque totam perferendis nemo beatae nihil ex repudiandae fugit! Cum ";
 
+            // $faqs = Faq::all();
+            // return view('faqs.page', compact('faqs'));
+            $faqs = DB::table('faqs')->get();
 
 
-
-        return view('home')->with('page_heading',$page_heading)->with('users',$users)->with('main_contant',$main_contant)->with('main2_contant',$main2_contant)->with('cars',$cars);
+        return view('home',compact('faqs'))->with('page_heading',$page_heading)->with('users',$users)->with('main_contant',$main_contant)->with('main2_contant',$main2_contant)->with('cars',$cars);
     }
     public function crud(Request $request){
         return view('crud');
@@ -120,38 +123,15 @@ class HomeController extends Controller
     }
 
     public function faqs(Request $request) {
-        $faqs = [
-            [
-                'id' => '1',
-                'faq_question' => 'What are the benefits of using this product?',
-                'faq_answer' => 'This product improves efficiency and reduces costs, making it an excellent choice for users.',
-            ],
-            [
-                'id' => '2',
-                'faq_question' => 'Is there a warranty included?',
-                'faq_answer' => 'Yes, the product comes with a 1-year warranty covering manufacturing defects.',
-            ],
-            [
-                'id' => '3',
-                'faq_question' => 'How can I get technical support?',
-                'faq_answer' => 'You can reach our technical support team via email or phone, available 24/7.',
-            ],
-            [
-                'id' => '4',
-                'faq_question' => 'What payment methods are accepted?',
-                'faq_answer' => 'We accept credit cards, debit cards, PayPal, and bank transfers.',
-            ],
-            [
-                'id' => '5',
-                'faq_question' => 'Can I return the product if I’m not satisfied?',
-                'faq_answer' => 'Yes, we have a 30-day return policy for unused and undamaged products.',
-            ],
-        ];
+   
+     
+          
+     
         
 
 
 
-        return view('faqs')->with('faqs', $faqs);
+        return view('faqs')->with('faqs',);
     }
     public function faq(Request $request) {
         $faq = [

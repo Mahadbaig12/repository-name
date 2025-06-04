@@ -1,0 +1,47 @@
+<?php
+
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\personController;
+use App\Http\Controllers\FaqController;
+use Illuminate\Support\Facades\Route;
+
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', [HomeController::class,'index']);
+Route::get('/about', function () {
+    return view('welcome');
+});
+Route::get('/home', [HomeController::class,'home'])->name('home');
+Route::get('/crud',[HomeController::class,'crud'])->name('crud');
+Route::get('/contact', [HomeController::class,'contact'])->name('contact');
+Route::get('/policy', [HomeController::class,'policy'])->name('policy');
+// Route::get('/faqs', [HomeController::class,'faqs'])->name('faqs');
+Route::get('/faq', [HomeController::class,'faq'])->name('faq');
+Route::get('/superadmin', [HomeController::class,'superadmin'])->name('superadmin');
+
+
+Route::get('/superadmin/post',[personController::class,'post'])->name('post');
+Route::get('/formadd',[personController::class,'formadd'])->name('formadd');
+Route::get('/formupdate/{id}',[personController::class,'formupdate'])->name('update.person');
+Route::post('/addperson',[personController::class,'addperson'])->name('addperson');
+Route::get('/person/{id}',[personController::class,'person'])->name('view.person');
+Route::get('/delete/{id}', [PersonController::class, 'deleteperson'])->name('delete.person');
+Route::get('/deleteall', [PersonController::class, 'deleteall'])->name('deleteall');
+Route::post('/updateperson/{id}', [personController::class, 'updateperson'])->name('update1.person');
+
+
+
+Route::resource('/superadmin/faqs', FaqController::class);
+Route::get('/faqs-page', [FaqController::class, 'showFaqsPage'])->name('faqs.page');
+
+

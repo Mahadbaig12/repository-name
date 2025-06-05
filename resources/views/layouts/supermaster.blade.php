@@ -14,7 +14,7 @@
                     <a class="nav-link" href="{{ route('post') }}">Cards</a>
                 </li>
                 <li class="list-group-item bg-transparent border-none mb-3">
-                    <a class="nav-link" href="#">A third item</a>
+                    <a class="nav-link" href="{{ route('gallery.index') }}">Gallery</a>
                 </li>
                 <li class="list-group-item bg-transparent border-none mb-3">
                     <a class="nav-link" href="#">A fourth item</a>

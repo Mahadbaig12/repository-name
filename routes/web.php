@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\personController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -43,5 +44,8 @@ Route::post('/updateperson/{id}', [personController::class, 'updateperson'])->na
 
 Route::resource('/superadmin/faqs', FaqController::class);
 Route::get('/faqs-page', [FaqController::class, 'showFaqsPage'])->name('faqs.page');
+
+
+Route::resource('/superadmin/gallery', GalleryController::class);
 
 

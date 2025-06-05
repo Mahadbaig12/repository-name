@@ -91,8 +91,9 @@ class HomeController extends Controller
             
             $faqs = DB::table('faqs')->get();
             $cards = DB::table('person')->get();
+            $gallery =DB::table('galleries')->get();
 
-        return view('home',compact('faqs','cards'))->with('page_heading',$page_heading)->with('users',$users)->with('main_contant',$main_contant)->with('main2_contant',$main2_contant)->with('cars',$cars);
+        return view('home',compact('faqs','cards','gallery'))->with('page_heading',$page_heading)->with('users',$users)->with('main_contant',$main_contant)->with('main2_contant',$main2_contant)->with('cars',$cars);
     }
     public function crud(Request $request){
         return view('crud');

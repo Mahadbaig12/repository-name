@@ -99,5 +99,37 @@
         </div>
     </div>
     </section>
+
+
+    <section id="gallery" class="gallery section">
+
+     
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+          <h2>Gallery</h2>
+          <div><span>Check Our</span> <span class="description-title text-custom">Gallery</span></div>
+        </div>
+  
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row g-0">
+  
+            @foreach ($gallery as $item)
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item h-100">
+                    <a href="{{ asset('storage/' . $item->image_path) }}" class="glightbox" data-gallery="images-gallery">
+                        <img src="{{ asset('storage/' . $item->image_path) }}" alt="Gallery Image" class="img-fluid h-100">
+                    </a>
+                </div>
+            </div>
+        @endforeach
+        
+  
+           
+  
+          </div>
+  
+        </div>
+  
+      </section>
     </div>
 @endsection

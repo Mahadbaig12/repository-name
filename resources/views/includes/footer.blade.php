@@ -3,7 +3,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo text-decoration-none d-flex align-items-center">
+          <a href="/" class="logo text-decoration-none d-flex align-items-center">
             <span class="text-custom">Bootslander</span>
           </a>
           <div class="footer-contact pt-3">

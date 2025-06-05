@@ -37,10 +37,14 @@
             </div>
     </div>
    <section class="bg-custom my-5">
-    <div class="container py-5">
+    <div class="container   py-5"  >
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+            <h2 class="text-white">FAQS</h2>
+            <div><span class="text-white">Check Our</span> <span class="description-title text-custom">FAQS</span></div>
+          </div>
         <div class="col-md-12">
-            <h2 class="display-4 text-custom text-center text-uppercase mb-4">FAQs</h2>
-            <div class="accordion" id="accordionExample">
+            
+            <div class="accordion " id="accordionExample" data-aos="fade-up" data-aos-delay="200">
                 @foreach ($faqs as $faq)
                     @if (is_object($faq))
                         <div class="accordion-item mb-3">
@@ -64,12 +68,17 @@
         </div>
     </div>
    </section>
-    <div class="container py-5">
+    <div class="container  py-5"  >
+        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+            <h2>SPOTLITE</h2>
+            <div><span>Check Our</span> <span class="description-title text-custom">Spotlite Cars</span></div>
+          </div>
+
         <div class="row">
-            <h1 class="text-center display-4 text-uppercase mb-5">Spotlite  Cars</h1>
+           
             @foreach ($cards as $card)
                 <div class="col-md-3 mb-3">
-                    <div class="card">
+                    <div class="card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div class="image">
                             @if ($card->photo)
                                 <img class="w-100" style="height: 150px; object-fit: cover"

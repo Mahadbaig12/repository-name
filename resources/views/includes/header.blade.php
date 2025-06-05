@@ -10,7 +10,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item px-2">
-                    <a class="nav-link active" aria-current="page" href="{{ route('contact') }}">Contact-us</a>
+                    <a class="nav-link" aria-current="page" href="{{ route('contact') }}">Contact-us</a>
                   </li>
                   {{-- <li class="nav-item px-2">
                     <a class="nav-link " href="{{ route('post') }}">Crud</a>

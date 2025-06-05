@@ -1,6 +1,6 @@
 <header>
 
-    <div class="container">
+    <div class="container py-3">
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="/home">Cars Website</a>

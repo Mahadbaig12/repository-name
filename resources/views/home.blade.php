@@ -43,7 +43,7 @@
             <div><span class="text-white">Check Our</span> <span class="description-title text-custom">FAQS</span></div>
           </div>
         <div class="col-md-12">
-            
+
             <div class="accordion " id="accordionExample" data-aos="fade-up" data-aos-delay="200">
                 @foreach ($faqs as $faq)
                     @if (is_object($faq))
@@ -68,16 +68,17 @@
         </div>
     </div>
    </section>
-    <div class="container  py-5"  >
-        <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+   <section id="team" class="team bg-transparent section">
+     <div class="container  py-5"  >
+        <div class="container  section-title aos-init aos-animate" data-aos="fade-up">
             <h2>SPOTLITE</h2>
             <div><span>Check Our</span> <span class="description-title text-custom">Spotlite Cars</span></div>
           </div>
 
         <div class="row">
-           
+
             @foreach ($cards as $card)
-                <div class="col-md-3 mb-3">
+                {{-- <div class="col-md-3 mb-3">
                     <div class="card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div class="image">
                             @if ($card->photo)
@@ -103,25 +104,42 @@
                             </a>
                         </div>
                     </div>
+                </div> --}}
+                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic">  @if ($card->photo)
+                                <img class="img-fluid" style=" object-fit: cover"
+                                    src="{{ asset('storage/' . $card->photo) }}" alt="{{ $card->name }}">
+                            @endif</div>
+              <div class="member-info">
+                <h4>{{ $card->name }}</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+
+                <a class="d-flex align-items-center text-decoration-none gap-2 text-black" href="{{ route('view.person', ['id' => $card->id]) }}">Details<i class="fa-solid text-custom fa-arrow-right"></i></a>
                 </div>
+              </div>
+            </div>
+          </div>
             @endforeach
         </div>
     </div>
+   </section>
     </section>
 
 
     <section id="gallery" class="gallery section">
 
-     
+
         <div class="container section-title aos-init aos-animate" data-aos="fade-up">
           <h2>Gallery</h2>
           <div><span>Check Our</span> <span class="description-title text-custom">Gallery</span></div>
         </div>
-  
+
         <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-  
+
           <div class="row g-0">
-  
+
             @foreach ($gallery as $item)
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item h-100">
@@ -131,14 +149,14 @@
                 </div>
             </div>
         @endforeach
-        
-  
-           
-  
+
+
+
+
           </div>
-  
+
         </div>
-  
+
       </section>
     </div>
 @endsection

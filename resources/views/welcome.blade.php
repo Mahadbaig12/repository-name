@@ -3,12 +3,12 @@
 
 
 @section('welcome')
- 
+
 <div class="container py-5">
         <div class="row">
 
                 @foreach ($cards as $card)
-                        
+
                 <div class="col-md-3 mb-3">
                        <div class="card">
                                 <div class="image">
@@ -19,13 +19,13 @@
                                  <div class="content">
                                    <a href="#">
                                      <span class="title">
-                                    {{ $card->name }} 
+                                    {{ $card->name }}
                                      </span>
                                    </a>
                                    <p class="desc">
                                  {{ $card->description }}
                                    </p>
-                               
+
                                    <a class="action" href="{{ route('view.person', ['id' => $card->id]) }}">
                                      Find out more
                                      <span aria-hidden="true">
@@ -33,7 +33,7 @@
                                      </span>
                                    </a>
                                  </div>
-                               </div> 
+                               </div>
                                {{-- <div class="plan">
                                 <div class="inner">
                                   <span class="pricing">
@@ -83,8 +83,8 @@
 
 
 
-                               
-                        
+
+
                 </div>
 
 
@@ -92,16 +92,16 @@
 
 
 
-              
 
 
 
-                
-               
+
+
+
         </div>
 </div>
 
 @endsection
-  
-  
+
+
 

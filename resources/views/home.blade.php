@@ -3,15 +3,23 @@
     <div class="container-fluid  back-img">
         <div class="container overflow py-5">
             <div class="row">
+               <div class="col-lg-12">
                 <div style="background: tranparent" class="col-md-12 p-5">
                     <h2 class="text-center fw-semibold text-white display-1"> {{ $main_contant }}</h2>
                 </div>
                 <div style="background: transparent" class="col-md-12 p-5">
                     <p class="text-center text-white fs-5">{{ $main2_contant }}</p>
                 </div>
+               </div>
+               {{-- <div class="col-lg-6">
+                <spline-viewer url="https://prod.spline.design/eecCsn9agE4kVRtm/scene.splinecode"></spline-viewer>
+               </div> --}}
             </div>
         </div>
     </div>
+
+   
+
     <div class="container">
         <section class="">
             <div class="row">
@@ -78,37 +86,11 @@
         <div class="row">
 
             @foreach ($cards as $card)
-                {{-- <div class="col-md-3 mb-3">
-                    <div class="card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div class="image">
-                            @if ($card->photo)
-                                <img class="w-100" style="height: 150px; object-fit: cover"
-                                    src="{{ asset('storage/' . $card->photo) }}" alt="{{ $card->name }}">
-                            @endif
-                        </div>
-                        <div class="content">
-                            <a href="#">
-                                <span class="title">
-                                    {{ $card->name }}
-                                </span>
-                            </a>
-                            <p class="desc">
-                                {{ $card->description }}
-                            </p>
-
-                            <a class="action" href="{{ route('view.person', ['id' => $card->id]) }}">
-                                Find out more
-                                <span aria-hidden="true">
-                                    →
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div> --}}
-                <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+               
+                <div class="col-lg-4 mb-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="pic">  @if ($card->photo)
-                                <img class="img-fluid" style=" object-fit: cover"
+                                <img class="img-fluid h-100" style=" object-fit: cover"
                                     src="{{ asset('storage/' . $card->photo) }}" alt="{{ $card->name }}">
                             @endif</div>
               <div class="member-info">

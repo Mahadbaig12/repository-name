@@ -312,6 +312,10 @@ nav ul li, .navbar-brand {
     align-items: center;
   }
 
+  #container a{
+    display: none !important;
+  }
+
   .footer .footer-links ul li:first-child {
     padding-top: 0;
   }

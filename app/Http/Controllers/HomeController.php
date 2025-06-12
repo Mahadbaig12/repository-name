@@ -121,6 +121,20 @@ class HomeController extends Controller
 
         return view('policy')->with('head_policy', $head_policy)->with('policy_contant',$policy_contant);
     }
+    public function login(Request $request){
+
+       
+
+
+        return view('login');
+    }
+    public function signup(Request $request){
+
+       
+
+
+        return view('register');
+    }
 
    
    

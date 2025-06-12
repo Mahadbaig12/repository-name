@@ -29,6 +29,8 @@ Route::get('/policy', [HomeController::class,'policy'])->name('policy');
 // Route::get('/faqs', [HomeController::class,'faqs'])->name('faqs');
 Route::get('/faq', [HomeController::class,'faq'])->name('faq');
 Route::get('/superadmin', [HomeController::class,'superadmin'])->name('superadmin');
+Route::get('/login', [HomeController::class,'login'])->name('login');
+Route::get('/signup', [HomeController::class,'signup'])->name('signup');
 
 
 Route::get('/superadmin/post',[personController::class,'post'])->name('post');

@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class,'index']);
+Route::get('/', [HomeController::class,'index'])->name('index');
 Route::get('/about', function () {
     return view('welcome');
 });
@@ -31,6 +31,9 @@ Route::get('/faq', [HomeController::class,'faq'])->name('faq');
 Route::get('/superadmin', [HomeController::class,'superadmin'])->name('superadmin');
 Route::get('/login', [HomeController::class,'login'])->name('login');
 Route::get('/signup', [HomeController::class,'signup'])->name('signup');
+Route::get('/registerSave', [HomeController::class,'register'])->name('registerSave');
+Route::get('loginMatch', [HomeController::class,'login2'])->name('loginMatch');
+Route::get('logout', [HomeController::class,'logout'])->name('logout');
 
 
 Route::get('/superadmin/post',[personController::class,'post'])->name('post');

@@ -9,6 +9,8 @@
                 </div>
                 <div style="background: transparent" class="col-md-12 p-5">
                     <p class="text-center text-white fs-5">{{ $main2_contant }}</p>
+                 
+               
                 </div>
                </div>
                {{-- <div class="col-lg-6">

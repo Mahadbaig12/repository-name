@@ -40,7 +40,19 @@
                   </li> --}}
                 </ul>
                 <div class="d-flex align-items-center gap-4">
-                  <p class="text-center mb-0 text-white fs-5">{{ Auth::user()->name }}</p>
+                  {{-- @php
+                
+                  $randomColor = sprintf('#%06X', mt_rand(0, 0xFFFFFF));
+              @endphp
+              
+              <div class="d-flex align-items-center gap-2">
+                  <div class="rounded-circle d-inline-flex justify-content-center align-items-center" 
+                       style="width: 50px; height: 50px; background-color: {{ $randomColor }}; color: white; font-size: 24px;">
+                      {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
+                  </div>
+                  <p class="mb-0 text-white fs-5">{{ Auth::user()->name }}</p>
+              </div> --}}
+              <p class="mb-0 text-white fs-5">{{ Auth::user()->name }}</p>
                     <a class="btn text-white btn-danger" href="{{ route('logout') }}" aria-disabled="false">Logout</a>
                   
        

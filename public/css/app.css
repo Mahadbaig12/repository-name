@@ -20,6 +20,18 @@
 
 
 
+.background-image{
+  background: url(../js/images/newimg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
 
 
 .back-img{
@@ -44,6 +56,11 @@
   right: 0;
   z-index: 0;
 }
+
+
+
+
+
 .overflow{
   position: relative;
   z-index: 2;
@@ -481,6 +498,25 @@ nav ul li, .navbar-brand {
   outline: none;
   width: 100%;
   color: #d3d3d3;
+}
+.input-field:focus {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+.input-field:autofill {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3 !important;
+  box-shadow: 0 0 0px 1000px #171717 inset; 
+}
+
+.input-field:autofill::first-line {
+  color: #d3d3d3 !important; 
 }
 
 .form .btn {

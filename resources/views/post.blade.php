@@ -17,7 +17,7 @@
         <div class="content">
           <h2 class="text-center mb-3">Dynamic tabel of data</h2>
           <div class="d-flex justify-content-between mb-4">
-            <a class="btn btn-success " href="{{ route('formadd') }}">Add new person</a>
+            <a class="btn btn-success " href="{{ route('formadd') }}">Add new Car</a>
             <a class="btn btn-danger " href="{{ route('deleteall') }}">Delete all</a>
           </div>
           <div class="row px-2">

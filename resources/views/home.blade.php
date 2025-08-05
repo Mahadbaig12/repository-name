@@ -156,7 +156,7 @@
                     <div class="carousel-caption">
                         <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions
                         </h1>
-                        <a href="#" class="btn btn-primary py-3 px-4">Explore More</a>
+                        <a href="#check" class="btn btn-primary py-3 px-4">Explore More</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -164,7 +164,7 @@
                     <div class="carousel-caption">
                         <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions
                         </h1>
-                        <a href="#" class="btn btn-primary py-3 px-4">Explore More</a>
+                        <a href="#check" class="btn btn-primary py-3 px-4">Explore More</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -172,7 +172,7 @@
                     <div class="carousel-caption">
                         <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions
                         </h1>
-                        <a href="#" class="btn btn-primary py-3 px-4">Explore More</a>
+                        <a href="#check" class="btn btn-primary py-3 px-4">Explore More</a>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@
             </div>
         </div>
     </div>
-      <div class="container-fluid pt-6 pb-6">
+      <div id="check" class="container-fluid pt-6 pb-6">
         <div class="container pt-4">
             <div class="row g-0 feature-row wow fadeIn" data-wow-delay="0.1s">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">

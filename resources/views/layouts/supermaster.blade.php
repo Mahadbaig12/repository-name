@@ -2,7 +2,7 @@
 @include('includes.supheader')
 
 
-<div class="container-fluid">
+<div class="container-fluid superadmin">
     <div class="row">
         <div class="col-md-2 py-5">
         
@@ -16,12 +16,7 @@
                 <li class="list-group-item bg-transparent border-none mb-3">
                     <a class="nav-link" href="{{ route('gallery.index') }}">Gallery</a>
                 </li>
-                <li class="list-group-item bg-transparent border-none mb-3">
-                    <a class="nav-link" href="#">A fourth item</a>
-                </li>
-                <li class="list-group-item bg-transparent border-none mb-3">
-                    <a class="nav-link" href="#">And a fifth one</a>
-                </li>
+            
             </ul>
             
 

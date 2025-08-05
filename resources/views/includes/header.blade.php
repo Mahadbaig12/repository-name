@@ -41,7 +41,7 @@
     <div class="container-fluid bg-primary text-white d-none d-lg-flex wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-3">
             <div class="d-flex align-items-center">
-                <a class="text-decoration-none" href="index.html">
+                <a  class="text-decoration-none" href="/">
                     <h2 class="text-white fw-bold m-0">WELDORK</h2>
                 </a>
                 <div class="ms-auto d-flex align-items-center">

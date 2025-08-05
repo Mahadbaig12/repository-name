@@ -646,7 +646,11 @@ a{
 .copyright a:hover {
     color: var(--bs-primary);
 }
-
+.superadmin .active{
+    color: white !important;
+   background-color: #CE9233 !important;
+   border: none !important;
+}
 
 
 

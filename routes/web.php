@@ -18,14 +18,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])
-    ->name('index')
+Route::get('/', [HomeController::class, 'home'])
+    ->name('home')
     ->middleware('auth');
 
 Route::get('/about', function () {
     return view('welcome');
 });
-Route::get('/home', [HomeController::class,'home'])->name('home');
+Route::get('/services', [HomeController::class,'index'])->name('index');
 Route::get('/crud',[HomeController::class,'crud'])->name('crud');
 Route::get('/contact', [HomeController::class,'contact'])->name('contact');
 Route::get('/about', [HomeController::class,'policy'])->name('about');

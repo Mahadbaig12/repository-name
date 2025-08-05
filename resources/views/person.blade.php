@@ -5,33 +5,28 @@
 @section('person')
  
 <div class="container py-5">
-        <div class="row">
-         
+      
           @foreach ($person as $item)
-          <h3>
-           id : {{ $item->id}}
-        </h3>
-          <h3>
-           name : {{ $item->name}}
-        </h3>
-          <h3>
-           email : {{ $item->email}}
-        </h3>
-          <h3>
-           age : {{ $item->age}}
-        </h3>
-          <h3>
-           city : {{ $item->city}}
-        </h3>
-          <h3>
-           photo :   @if ($item->photo)
-           <img src="{{ asset('storage/' . $item->photo) }}" alt="{{ $item->name }}" width="100">
+          <h2 class="mb-2 text-secondary fw-bold fs-2">IMAGE</h2>
+              <div class="mb-4">
+                @if ($item->photo)
+           <img height="350px" class="w-50" src="{{ asset('storage/' . $item->photo) }}" alt="{{ $item->name }}" width="100">
        @endif
+              </div>
+           <div class="mb-4">
+             <h2 class="mb-1 text-secondary fw-bold fs-2">NAME</h2>
+               <h3 class="fs-4 text-black">{{ $item->name}}
+           </div>
         </h3>
+      <div class="mb-4">
+          <h2 class="mb-2 text-secondary text-uppercase fw-bold fs-2">Description</h2>
+        <p class="text-black">{{ $item->description}}</p>
+      </div>
+     
           @endforeach
           
               
-        </div>
+   
 </div>
 
 @endsection

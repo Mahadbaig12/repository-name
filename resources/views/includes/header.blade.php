@@ -81,9 +81,10 @@
 
                     <a href="{{ route('about') }}"
                         class="nav-item nav-link {{ Route::is('about') ? 'active' : '' }}">About</a>
+                    <a href="{{ route('index') }}"
+                        class="nav-item nav-link {{ Route::is('index') ? 'active' : '' }}">Services</a>
 
-                    <a href="/"
-                        class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Services</a>
+                   
 
                     @php
                         $pageRoutes = ['feature', 'team', 'testimonial', 'appointment', '404'];

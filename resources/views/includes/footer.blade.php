@@ -1,67 +1,198 @@
-<footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="/" class="logo text-decoration-none d-flex align-items-center">
-            <span class="text-custom">Bootslander</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+        <!-- Testimonial Start -->
+    <div class="container-fluid pt-6 pb-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="display-6 text-uppercase mb-5">Our Work Partners</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="testimonial-img">
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                        </div>
+                        <div class="animated flip infinite">
+                            <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center mb-4">
+                                <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                                <div class="ms-3">
+                                    <div class="mb-2">
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                        <i class="far fa-star text-primary"></i>
+                                    </div>
+                                    <h5 class="text-uppercase">Client Name</h5>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Bootslander</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
-      </div>
+    <!-- Testimonial End -->
+    
+    
+    
+    
+    <div class="container-fluid bg-dark footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Our Office</h5>
+                    <p class="mb-2 text-secondary"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2 text-secondary"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+                    <p class="mb-2 text-secondary"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Business Hours</h5>
+                    <p class="text-uppercase text-secondary mb-0">Monday - Friday</p>
+                    <p class="text-secondary">09:00 am - 07:00 pm</p>
+                    <p class="text-uppercase text-secondary mb-0">Saturday</p>
+                    <p class="text-secondary">09:00 am - 12:00 pm</p>
+                    <p class="text-uppercase text-secondary mb-0">Sunday</p>
+                    <p class="text-secondary">Closed</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Gallery</h5>
+                    <div class="row g-1">
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Footer End -->
 
-  </footer>
+
+    <!-- Copyright Start -->
+    <div class="container-fluid text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-secondary text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold " href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-secondary text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+            class="bi bi-arrow-up"></i></a>

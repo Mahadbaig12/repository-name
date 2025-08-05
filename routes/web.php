@@ -28,7 +28,7 @@ Route::get('/about', function () {
 Route::get('/home', [HomeController::class,'home'])->name('home');
 Route::get('/crud',[HomeController::class,'crud'])->name('crud');
 Route::get('/contact', [HomeController::class,'contact'])->name('contact');
-Route::get('/policy', [HomeController::class,'policy'])->name('policy');
+Route::get('/about', [HomeController::class,'policy'])->name('about');
 // Route::get('/faqs', [HomeController::class,'faqs'])->name('faqs');
 Route::get('/faq', [HomeController::class,'faq'])->name('faq');
 Route::get('/superadmin', [HomeController::class,'superadmin'])->name('superadmin');

@@ -1,5 +1,5 @@
         <!-- Testimonial Start -->
-    <div class="container-fluid pt-6 pb-6">
+    <div id="partner" class="container-fluid pt-6 pb-6">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 text-uppercase mb-5">Our Work Partners</h1>
@@ -8,16 +8,19 @@
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="testimonial-img">
                         <div class="animated flip infinite">
-                            <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                           <img class="img-fluid" src="{{ asset('img/testimonial-1.jpg') }}" alt="">
                         </div>
                         <div class="animated flip infinite">
-                            <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                  <img class="img-fluid" src="{{ asset('img/testimonial-2.jpg') }}" alt="">
+
                         </div>
                         <div class="animated flip infinite">
-                            <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/testimonial-3.jpg') }}" alt="">
+
                         </div>
                         <div class="animated flip infinite">
-                            <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                         <img class="img-fluid" src="{{ asset('img/testimonial-4.jpg') }}" alt="">
+
                         </div>
                     </div>
                 </div>
@@ -25,7 +28,8 @@
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/testimonial-1.jpg') }}" alt="">
+
                                 <div class="ms-3">
                                     <div class="mb-2">
                                         <i class="far fa-star text-primary"></i>
@@ -44,7 +48,8 @@
                         </div>
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                               <img class="img-fluid" src="{{ asset('img/testimonial-2.jpg') }}" alt="">
+
                                 <div class="ms-3">
                                     <div class="mb-2">
                                         <i class="far fa-star text-primary"></i>
@@ -63,7 +68,8 @@
                         </div>
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/testimonial-3.jpg') }}" alt="">
+
                                 <div class="ms-3">
                                     <div class="mb-2">
                                         <i class="far fa-star text-primary"></i>
@@ -82,7 +88,8 @@
                         </div>
                         <div class="testimonial-item">
                             <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                                <img class="img-fluid" src="{{ asset('img/testimonial-4.jpg') }}" alt="">
+
                                 <div class="ms-3">
                                     <div class="mb-2">
                                         <i class="far fa-star text-primary"></i>
@@ -149,22 +156,24 @@
                     <h5 class="text-uppercase text-light mb-4">Gallery</h5>
                     <div class="row g-1">
                         <div class="col-4">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        
+                            <img class="img-fluid" src="{{ asset('img/service-1.jpg') }}" alt="">
+
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/service-2.jpg') }}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/service-3.jpg') }}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/service-4.jpg') }}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/service-5.jpg') }}" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('img/service-6.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -185,7 +194,7 @@
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-6">
             <div style="max-width: 100%" class="card p-4">
-                <h2 class="mb-3">Add New Product</h2>
+                <h2 class="mb-3">Add New Service</h2>
                 <form action="{{ route('addperson') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">

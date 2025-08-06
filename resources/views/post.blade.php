@@ -4,10 +4,10 @@
 <div class="container py-5">
     <div class="row">
         <div class="content">
-            <h2 class="text-center mb-4">Products Table</h2>
+            <h2 class="text-center mb-4">Service Table</h2>
 
             <div class="d-flex justify-content-between mb-4">
-                <a class="btn btn-success" href="{{ route('formadd') }}">Add New Product</a>
+                <a class="btn btn-success" href="{{ route('formadd') }}">Add New Service</a>
                 <a class="btn btn-danger" href="{{ route('deleteall') }}">Delete All</a>
             </div>
 
@@ -16,9 +16,7 @@
                     <thead class="table-dark">
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
-                          
-                        
+                            <th>Name</th>                    
                             <th>Image</th>
                             <th>Action</th>
                         </tr>
@@ -28,8 +26,6 @@
                             <tr>
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->name }}</td>
-                               
-                            
                                 <td>
                                     @if ($item->photo)
                                         <img src="{{ asset('storage/' . $item->photo) }}" alt="{{ $item->name }}" width="80" height="60">

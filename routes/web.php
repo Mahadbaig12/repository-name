@@ -19,8 +19,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home'])
-    ->name('home')
-    ->middleware('auth');
+    ->name('home');
+    // ->middleware('auth');
 
 Route::get('/about', function () {
     return view('welcome');

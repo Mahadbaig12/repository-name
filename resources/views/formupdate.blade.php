@@ -7,7 +7,7 @@
 
         <div class="col-6">
             <div style="max-width: 100%" class="card p-4">
-                <h2 class="mb-3">Update Product data</h2>
+                <h2 class="mb-3">Update Service data</h2>
                 <form action="{{ route('update1.person', $person->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">

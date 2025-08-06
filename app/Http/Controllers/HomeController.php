@@ -56,14 +56,6 @@ class HomeController extends Controller
     $main_contant = "NEW CARS SPOT HERE";
     $main2_contant = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna nisl. Ut scelerisque libero nec nibh tristique, ac bibendum ex laoreet. Vivamus vehicula, justo vel tincidunt interdum, mauris orci malesuada metus. Pellentesque nec felis ut nisl bibendum vehicula. Fusce volutpat, ligula at tempus varius, turpis metus fermentum felis, nec tristique eros lorem vel risus. Nulla facilisi. Aenean euismod, nisi sed vestibulum gravida, ipsum eros convallis elit, a tempus orci lacus et metus.
 
-
-
-
-
-
-
-
-
 ";
 
     $faqs = DB::table('faqs')->get();
@@ -77,7 +69,6 @@ class HomeController extends Controller
         ->with('main2_contant', $main2_contant)
         ->with('cars', $cars);
 }
-
     public function crud(Request $request){
         return view('crud');
     }
@@ -85,37 +76,16 @@ class HomeController extends Controller
         return view('superadmin.superadmin');
     }
     public function contact(Request $request){
-
-        $head_contact = "Contact Us Form";
-
-
-        return view('contact')->with('head_contact', $head_contact);
+        return view('contact');
     }
     public function policy(Request $request){
-
-        $head_policy = "Policy page";
-
-        $policy_contant = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod officia saepe expedita laborum cumque, quia nam. Explicabo porro eos odio nemo provident tempore nesciunt, magnam sapiente expedita quibusdam magni, eligendi hic doloribus ipsam nobis animi exercitationem quas. Est, neque totam perferendis nemo beatae nihil ex repudiandae fugit! Cum 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod officia saepe expedita laborum cumque, quia nam. Explicabo porro eos odio nemo provident tempore nesciunt, magnam sapiente expedita quibusdam magni, eligendi hic doloribus ipsam nobis animi exercitationem quas. Est, neque totam perferendis nemo beatae nihil ex repudiandae fugit! Cum 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod officia saepe expedita laborum cumque, quia nam. Explicabo porro eos odio nemo provident tempore nesciunt, magnam sapiente expedita quibusdam magni, eligendi hic doloribus ipsam nobis animi exercitationem quas. Est, neque totam perferendis nemo beatae nihil ex repudiandae fugit! Cum 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod officia saepe expedita laborum cumque, quia nam. Explicabo porro eos odio nemo provident tempore nesciunt, magnam sapiente expedita quibusdam magni, eligendi hic doloribus ipsam nobis animi exercitationem quas. Est, neque totam perferendis nemo beatae nihil ex repudiandae fugit! Cum ";
-        
-
-
-        return view('policy')->with('head_policy', $head_policy)->with('policy_contant',$policy_contant);
+        return view('policy');
     }
     public function login(Request $request){
-
-       
-
-
         return view('login');
     }
     public function logout(){
-
         Auth::logout();
-
-
         return view('login');
     }
     public function login2(Request $request){
@@ -126,9 +96,9 @@ class HomeController extends Controller
             'password' => 'required',
        ]);
 
-       if(Auth::attempt($cred)){
-        return redirect()->route('home');
-       }
+    //    if(Auth::attempt($cred)){
+    //     return redirect()->route('home');
+    //    }
 
 
         

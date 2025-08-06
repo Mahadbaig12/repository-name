@@ -111,7 +111,7 @@
                         class="nav-item nav-link {{ Route::is('contact') ? 'active' : '' }}">Contact</a>
                 </div>
                 <div class="ms-auto d-none d-lg-block">
-                    <a href="" class="btn btn-primary py-2 px-3">Get A Quote</a>
+                    <a href="#partner" class="btn btn-primary py-2 px-3">Partners</a>
                 </div>
             </div>
         </nav>

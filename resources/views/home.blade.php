@@ -136,11 +136,11 @@
 
       </section>
     </div> --}}
-       <div class="container-fluid p-0 mb-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid p-0 mb-6 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1">
                     <img class="img-fluid" src="img/carousel-1.jpg" alt="Image">
                 </button>
                 <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
@@ -154,7 +154,8 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption">
-                        <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions
+                        <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft
+                            Solutions
                         </h1>
                         <a href="#check" class="btn btn-primary py-3 px-4">Explore More</a>
                     </div>
@@ -162,7 +163,8 @@
                 <div class="carousel-item">
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption">
-                        <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions
+                        <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft
+                            Solutions
                         </h1>
                         <a href="#check" class="btn btn-primary py-3 px-4">Explore More</a>
                     </div>
@@ -170,7 +172,8 @@
                 <div class="carousel-item">
                     <img class="w-100" src="img/carousel-3.jpg" alt="Image">
                     <div class="carousel-caption">
-                        <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions
+                        <h1 class="display-1 fw-bold text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft
+                            Solutions
                         </h1>
                         <a href="#check" class="btn btn-primary py-3 px-4">Explore More</a>
                     </div>
@@ -178,7 +181,7 @@
             </div>
         </div>
     </div>
-     <div class="container-fluid pt-6 pb-6">
+    <div class="container-fluid pt-6 pb-6">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -216,13 +219,14 @@
                     <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum
                     </p>
                     <div class="border border-5 border-primary p-4 text-center mt-4">
-                        <h4 class="lh-base text-uppercase mb-0">We’re Good in All Metal Works Using Quality Welding Tools</h4>
+                        <h4 class="lh-base text-uppercase mb-0">We’re Good in All Metal Works Using Quality Welding Tools
+                        </h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-      <div id="check" class="container-fluid pt-6 pb-6">
+    <div id="check" class="container-fluid pt-6 pb-6">
         <div class="container pt-4">
             <div class="row g-0 feature-row wow fadeIn" data-wow-delay="0.1s">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
@@ -284,12 +288,13 @@
             </div>
         </div>
     </div>
-        <div class="container-fluid feature mt-6 mb-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid feature mt-6 mb-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-0 justify-content-end">
                 <div class="col-lg-6 pt-5">
                     <div class="mt-5">
-                        <h1 class="display-6 text-white text-uppercase mb-4 wow fadeIn" data-wow-delay="0.3s">Why You should Choose Our welding Services</h1>
+                        <h1 class="display-6 text-white text-uppercase mb-4 wow fadeIn" data-wow-delay="0.3s">Why You
+                            should Choose Our welding Services</h1>
                         <p class="text-light mb-4 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar
                             tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu
@@ -335,13 +340,13 @@
             </div>
         </div>
     </div>
-        <div class="container-fluid service pt-6 pb-6">
-        <div class="container">
+        <div class="container-fluid service pt-6 px-0">
+            <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="display-6 text-uppercase mb-5">Reliable & High-Quality Welding Services</h1>
             </div>
             <div class="row g-4">
-                    @foreach ($cards as $card)
+                @foreach ($cards as $card)
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
                             <div class="service-inner pb-5">
@@ -360,9 +365,34 @@
                         </div>
                     </div>
                 @endforeach
-              
-            
+
+
             </div>
         </div>
-    </div>
-@endsection
+          <div class="container-fluid service pt-6 pb-6">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="display-6 text-uppercase mb-5">Our Products</h1>
+                </div>
+                <div class="row g-4">
+                    @foreach ($gallery as $item)
+                        <div class="col-lg-3 col-md-4">
+                            <div class="gallery-item h-100">
+                                <a href="{{ asset('storage/' . $item->image_path) }}" class="glightbox "
+                                    data-gallery="images-gallery">
+                                    <img src="{{ asset('storage/' . $item->image_path) }}" alt="Gallery Image"
+                                        class="img-fluid mb-2 h-100">
+                                </a>
+                            <a class="text-black fs-4 fw-medium" href="{{ route('gallery.show', ['gallery' => $item->id]) }}">{{ $item->name }}</a>
+
+
+                            </div>
+                        </div>
+                    @endforeach
+
+
+                </div>
+            </div>
+        </div>
+      
+    @endsection

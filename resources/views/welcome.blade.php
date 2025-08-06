@@ -11,8 +11,8 @@
                         <h1 class="display-6 text-uppercase mb-3 animated slideInDown">Services</h1>
                         <nav aria-label="breadcrumb animated slideInDown">
                             <ol class="breadcrumb justify-content-center mb-0">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    
                                 <li class="breadcrumb-item" aria-current="page">Services</li>
                             </ol>
                         </nav>
